@@ -17,9 +17,11 @@ q:before, q:after { content:''; }
 /* end reset styles */
 
 body {
-	box-sizing: border-box;		
+	
 	font-size: 62.5%;	
 	font-family: 'Raleway', sans-serif;
+	width: 100%;
+
 }
 
 
@@ -29,6 +31,8 @@ body {
 	background-color: rgb(38,31,61);
 	height: 120px;
 	width: 100%;
+	z-index: 100;
+
 }
 
 div#logo {
@@ -49,7 +53,7 @@ img {
 ul.opciones {
 	display: inline-block;
 	position: relative;
-	left:700px;
+	left:600px;
 	width: 600px;
 	height: 50px; 
 }
@@ -95,17 +99,18 @@ li#explorer:hover {
 
 
 .navbar2 {
-	position: relative;
-	top:120px;
 	height: 90px;
 	width: 100%;
 	border:2px solid rgb(51,52,71) ;
 	visibility: hidden;
+	padding-top: 100px;
 
 }
 
 .visible {
+
 	visibility:visible;
+
 }
 
 
@@ -131,5 +136,75 @@ li#explorer:hover {
 .navbar2 a {	
 	color:rgb(51,52,71);
 }
+
+
+#registro {
+position: relative;
+top:26px;
+width: 100%;
+
+}
+
+
+
+form {
+	border: 1px solid black;
+	width: 400px;
+	position: absolute;
+	right:0px;
+	background: white;
+	height: 450px;
+}
+
+fieldset {
+	border: 1px solid black;
+	width: 300px;
+	margin-left: 50px;
+
+}
+
+legend {
+	font-weight: bold;
+	font-size: 4em;
+}
+
+
+section {
+	position: absolute;
+	color:rgb(255,255,255);
+	top:380px;
+	left:60px;
+	line-height: 2;
+
+}
+
+section h2 {
+ font-size: 2.5em;
+ font-weight: bold;
+ 
+ 
+}
+
+
+section p {
+	font-size: 1.8em;
+}
+
+section img {
+	position: absolute;
+	width: 350px;
+	height: 350px;
+	top:2px;
+	right:-350px;
+}
+
+video {
+	width: 100%;
+	position:relative;
+	z-index: -1;
+	opacity: 1;
+
+}
+
 
 
